@@ -29,7 +29,7 @@ gulp.task('ctwig', function() {
 });
 
 // gulp.task watcher compile sass to css, twig to html, minified css
-gulp.task('watch', function() {
+gulp.task('watch', ['sass', 'cssmin', 'ctwig'], function() {
 	gulp.watch('styles/scss/**/*.scss', ['sass']);
 	gulp.watch('styles/css/style.css', ['cssmin']);
 	gulp.watch('templates/**/*.twig', ['ctwig']);
