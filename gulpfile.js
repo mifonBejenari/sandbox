@@ -3,10 +3,12 @@ var sass    = require('gulp-sass');
 var cssmin  = require('gulp-cssmin');
 var twig	= require('gulp-twig');
 var rename  = require('gulp-rename');
+var plumber = require('gulp-plumber');
 
 // gulp.task sass compile to css
 gulp.task('sass', function() {
 	return gulp.src('styles/scss/style.scss')
+		.pipe(plumber())
 		.pipe(sass())
 		.pipe(gulp.dest("styles/css"))
 });
