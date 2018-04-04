@@ -1,7 +1,48 @@
 {# index.twig #}
 {% extends "layout.twig" %}
 
+{% set page_title = 'gulp' %}
+
 {% block page %}
-    <h1>Hello World</h1>
-    <h2>CraceaLohu</h2>
+
 {% endblock %}
+
+{% set content = [
+    {
+    'title': 'title_1',
+    'img' : 'media/coniferous-forest.jpg',
+    'description': 'description_1',
+    'autor': 'autor_1',
+    'icon': 'fa fa-bookmark-o'
+    },
+    {
+    'title': 'title_2',
+    'img' : 'media/forest-972792_960_720.jpg',
+    'description': 'description_2',
+    'autor': 'autor_2',
+    'icon': 'fa fa-bookmark-o'
+    },
+    {
+    'title': 'title_3',
+    'img' : 'media/images.jpg',
+    'description': 'description_3',
+    'autor': 'autor_3',
+    'icon': 'fa fa-bookmark-o'
+    },
+    {
+    'title': 'title_4',
+    'img' : 'media/photo-1448234033678-91c13d8cbbad.jpg',
+    'description': 'description_4',
+    'autor': 'autor_4',
+    'icon': 'fa fa-bookmark-o'
+    },
+    {
+    'title': 'title_5',
+    'img' : 'media/shady-forest.jpg',
+    'description': 'description_5',
+    'autor': 'autor_5',
+    'date': 'date_5',
+    'icon': 'fa fa-bookmark-o'
+    }
+] %}
+

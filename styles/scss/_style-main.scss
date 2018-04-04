@@ -1,11 +1,9 @@
-body {
-  background-color: red;
-  padding: 15px;
-}
-
 h1 {
 	font-size: 50px;
 }
-h2 {
-	font-size: 3px;
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
 }

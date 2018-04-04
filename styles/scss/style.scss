@@ -1,7 +1,14 @@
 // this file is only for import files .scss not for styling
 
-@import "style-main"; // import file with main styles like body
+@import "style-main";
 
-@import "elements/buttons"; // import file buttons 
+// atoms
+@import "elements/atoms/buttons";
+@import "elements/atoms/links";
+@import "elements/atoms/images";
 
-@import "elements/links";
+// blocks
+@import "elements/blocks/card";
+
+// fonts
+@import "fonts/font";
