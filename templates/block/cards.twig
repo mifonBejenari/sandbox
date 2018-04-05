@@ -1,0 +1,11 @@
+{# card.twig #}
+{% extends "../layout.twig" %}
+{% include "card.twig" %}
+
+{% block cards %}
+    <div class="container container-flex">
+        {% for object in content %}
+            {% include 'card.twig' %}
+        {% endfor %}
+    </div>
+{% endblock %}
