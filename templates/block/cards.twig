@@ -3,8 +3,9 @@
 
 {% block cards %}
     <div class="container container-flex">
-        {% for object in content %}
-            {% include 'card.twig' %}
+        {% for xyu in content %}
+            {% include 'card.twig' with {'xyu': 'object'} %}
         {% endfor %}
     </div>
 {% endblock %}
+

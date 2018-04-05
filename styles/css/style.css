@@ -11,7 +11,8 @@ h1 {
   padding: 5px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #black; }
 
 img {
   min-width: 100%;
