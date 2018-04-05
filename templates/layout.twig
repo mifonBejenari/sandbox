@@ -13,148 +13,37 @@
 <body>
     {% block page %}
     {% endblock %}
-
+    
     <div class="container container-flex">
-        <div class="card card-size">
-            <div class="card_title card_element-padding">
-                <a href="{{ content.0.link_title }}" class="link card_link card_link_title">
-                    {{ content.0.title }}
-                </a>
-            </div>
-            <div class="card_img">
-                <a href="{{ content.0.img }}" class="link card_link card_link_img">
-                    <img src="{{ content.0.img }}" alt="">
-                </a>
-            </div>
-            <div class="card_description card_element-padding">
-                <p class="card_description_wrapper">
-                    {{ content.0.description }}
-                </p>
-            </div>
-            <div class="card_autor-wrapper card_element-padding">
-                <div class="card_autor">
-                    <a href="{{ content.0.link_autor }}" class="link card_link card_link_autor">
-                        {{ content.0.autor }}
+        {% for object in content %}
+            <div class="card card-size">
+                <div class="card_title card_element-padding">
+                    <a href="{{ object.link_title }}" class="link card_link card_link_title">
+                        {{ object.title }}
                     </a>
                 </div>
-                <div class="card_icon">
-                    <i class="{{ content.0.icon }}"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="card card-size">
-            <div class="card_title card_element-padding">
-                <a href="{{ content.1.link_title }}" class="link card_link card_link_title">
-                    {{ content.1.title }}
-                </a>
-            </div>
-            <div class="card_img">
-                <a href="{{ content.1.img }}" class="link card_link card_link_img">
-                    <img src="{{ content.1.img }}" alt="">
-                </a>
-            </div>
-            <div class="card_description card_element-padding">
-                <p class="card_description_wrapper">
-                    {{ content.1.description }}
-                </p>
-            </div>
-            <div class="card_autor-wrapper card_element-padding">
-                <div class="card_autor">
-                    <a href="{{ content.1.autor }}" class="link card_link card_link_autor">
-                        {{ content.1.autor }}
+                <div class="card_img">
+                    <a href="{{ object.img }}" class="link card_link card_link_img">
+                        <img src="{{ object.img }}" alt="">
                     </a>
                 </div>
-                <div class="card_icon">
-                    <i class="{{ content.1.icon }}"></i>
+                <div class="card_description card_element-padding">
+                    <p class="card_description_wrapper">
+                        {{ object.description }}
+                    </p>
+                </div>
+                <div class="card_autor-wrapper card_element-padding">
+                    <div class="card_autor">
+                        <a href="{{ object.autor }}" class="link card_link card_link_autor">
+                            {{ object.autor }}
+                        </a>
+                    </div>
+                    <div class="card_icon">
+                        <i class="{{ object.icon }}"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="card card-size">
-            <div class="card_title card_element-padding">
-                <a href="{{ content.2.link_title }}" class="link card_link card_link_title">
-                    {{ content.2.title }}
-                </a>
-            </div>
-            <div class="card_img">
-                <a href="{{ content.2.img }}" class="link card_link card_link_img">
-                    <img src="{{ content.2.img }}" alt="">
-                </a>
-            </div>
-            <div class="card_description card_element-padding">
-                <p class="card_description_wrapper">
-                    {{ content.2.description }}
-                </p>
-            </div>
-            <div class="card_autor-wrapper card_element-padding">
-                <div class="card_autor">
-                    <a href="{{ content.2.link_autor }}" class="link card_link card_link_autor">
-                        {{ content.2.autor }}
-                    </a>
-                </div>
-                <div class="card_icon">
-                    <i class="{{ content.2.icon }}"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="card card-size">
-            <div class="card_title card_element-padding">
-                <a href="{{ content.3.link_title }}" class="link card_link card_link_title">
-                    {{ content.3.title }}
-                </a>
-            </div>
-            <div class="card_img">
-                <a href="{{ content.3.img }}" class="link card_link card_link_img">
-                    <img src="{{ content.3.img }}" alt="">
-                </a>
-            </div>
-            <div class="card_description card_element-padding">
-                <p class="card_description_wrapper">
-                    {{ content.3.description }}
-                </p>
-            </div>
-            <div class="card_autor-wrapper card_element-padding">
-                <div class="card_autor">
-                    <a href="{{ content.3.link_autor }}" class="link card_link card_link_autor">
-                        {{ content.3.autor }}
-                    </a>
-                </div>
-                <div class="card_icon">
-                    <i class="{{ content.3.icon }}"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="card card-size">
-            <div class="card_title card_element-padding">
-                <a href="{{ content.4.link_title }}" class="link card_link card_link_title">
-                    {{ content.4.title }}
-                </a>
-            </div>
-            <div class="card_img">
-                <a href="{{ content.4.img }}" class="link card_link card_link_img">
-                    <img src="{{ content.4.img }}" alt="">
-                </a>
-            </div>
-            <div class="card_description card_element-padding">
-                <p class="card_description_wrapper">
-                    {{ content.4.description }}
-                </p>
-            </div>
-            <div class="card_autor-wrapper card_element-padding">
-                <div class="card_autor">
-                    <a href="{{ content.4.autor }}" class="link card_link card_link_autor">
-                        {{ content.4.autor }}
-                    </a>
-                </div>
-                <div class="card_icon">
-                    <i class="{{ content.4.icon }}"></i>
-                </div>
-            </div>
-        </div>
-
+        {% endfor %}
     </div>
 
 </body>
