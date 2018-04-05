@@ -12,39 +12,7 @@
 </head>
 <body>
     {% block page %}
+        {% block card %} {% endblock %}
     {% endblock %}
-    
-    <div class="container container-flex">
-        {% for object in content %}
-            <div class="card card-size">
-                <div class="card_title card_element-padding">
-                    <a href="{{ object.link_title }}" class="link card_link card_link_title">
-                        {{ object.title }}
-                    </a>
-                </div>
-                <div class="card_img">
-                    <a href="{{ object.img }}" class="link card_link card_link_img">
-                        <img src="{{ object.img }}" alt="">
-                    </a>
-                </div>
-                <div class="card_description card_element-padding">
-                    <p class="card_description_wrapper">
-                        {{ object.description }}
-                    </p>
-                </div>
-                <div class="card_autor-wrapper card_element-padding">
-                    <div class="card_autor">
-                        <a href="{{ object.autor }}" class="link card_link card_link_autor">
-                            {{ object.autor }}
-                        </a>
-                    </div>
-                    <div class="card_icon">
-                        <i class="{{ object.icon }}"></i>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-
 </body>
 </html>

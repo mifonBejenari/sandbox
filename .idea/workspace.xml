@@ -4,6 +4,7 @@
     <list default="true" id="5d06a9b8-6de7-44c1-8792-68fb06bfebb5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/templates/index.twig" afterPath="$PROJECT_DIR$/templates/index.twig" />
       <change beforePath="$PROJECT_DIR$/templates/layout.twig" afterPath="$PROJECT_DIR$/templates/layout.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,21 +16,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="card.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/block/card.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="969">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,6 +100,8 @@
         <option value="$PROJECT_DIR$/styles/scss/elements/atoms/_images.scss" />
         <option value="$PROJECT_DIR$/styles/scss/elements/blocks/_card.scss" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/templates/blok.twig/card.twig" />
+        <option value="$PROJECT_DIR$/templates/block/card.twig" />
         <option value="$PROJECT_DIR$/templates/index.twig" />
         <option value="$PROJECT_DIR$/templates/layout.twig" />
       </list>
@@ -149,6 +162,11 @@
               <item name="sandbox" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -193,12 +211,12 @@
       <updated>1522828037401</updated>
       <workItem from="1522828038593" duration="16371000" />
       <workItem from="1522853535549" duration="642000" />
-      <workItem from="1522920726496" duration="6105000" />
+      <workItem from="1522920726496" duration="7418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23118000" />
+    <option name="totallyTimeSpent" value="24431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -483,18 +501,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.twig">
+    <entry file="file://$PROJECT_DIR$/templates/layout.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="18" selection-end-column="30" />
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.twig">
+    <entry file="file://$PROJECT_DIR$/templates/block/card.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
