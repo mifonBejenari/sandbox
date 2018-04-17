@@ -3,7 +3,7 @@
 <div class="card card-size">
     <div class="card_title card_element-padding">
         <a href="{{ object.link_title }}" class="link card_link card_link_title">
-            {{ attribute(object, 'title') }}
+            {{ object.title }}
         </a>
     </div>
     <div class="card_img">
@@ -23,7 +23,7 @@
             </a>
         </div>
         <div class="card_icon">
-            <i class="{{ object['icon'] }}"></i>
+            <i class="{{ object.icon }}"></i>
         </div>
     </div>
 </div>
